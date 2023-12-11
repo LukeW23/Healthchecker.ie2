@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Health, Calorie, calculator">
+  <meta name="revised"  content="updated, 11/12/2023">
+  <meta name="author"   content="Luke Weldon">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Healthchecker.ie</h1>
+  </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bmi.html">BMI</a></li>
+          <li><a class="active" href="calorie.html">Calorie</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <h2>Understanding Calories</h2>
+          <p>You need energy from calories for your body to work properly. Your body uses this energy to function properly.</p>
+
+          <p>To stay at around the same weight, the calories your body uses should be the same as the amount of calories you eat and drink.</p>
+          
+          <p>If you do not use the same amount of calories as you eat and drink, your body weight may change. </p>
+          
+          <p>For example:<br> You're likely to put on weight if you eat and drink more calories than you use. This is because your body stores the extra energy as fat
+             you're likely to lose weight if you eat and drink fewer calories than you use. This is because your body uses its stored fat for energy</p>
+
+    <section class="calculator">
+        <h3 class= "text-center">Calorie Calculator</h3>
+        <form id="calorieForm">
+            <label for="gender">Gender:</label>
+            <br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <label for="age">Age (years):</label>
+            <br>
+            <input type="number" id="age" name="age" required>
+            <br>
+            <label for="weight">Weight (kg):</label>
+            <br>
+            <input type="number" id="weight" name="weight" required>
+            <br>
+            <label for="height">Height (cm):</label>
+            <br>
+            <input type="number" id="height" name="height" required>
+            <br>
+            <label for="caloriesBurned">Calories Burned per Day:</label>
+            <br>
+            <input type="number" id="caloriesBurned" name="caloriesBurned" required>
+            
+            <button type="button" class="btn" onclick="calculateCalories()">Calculate</button>
+            
+            <div id="result" class="text-center">Your Daily Calorie Intake is</div>
+        </form>
+
+        
+    </section>
+
+
+
+      </div>
+<footer class="footer">&copy;All images strictly copyright to UCDPA Photography and Healthchecker.ie. © 2023 Healthcheck. All rights reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- <body>
+    <section class="calculator">
+        <h1 class= "text-center">Calorie Calculator</h1>
+        <form id="calorieForm">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="age">Age (years):</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="caloriesBurned">Calories Burned per Week:</label>
+            <input type="number" id="caloriesBurned" name="caloriesBurned" required>
+
+            <button type="button" onclick="calculateCalories()">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer class="footer">&copy;All images strictly copyright to UCDPA Photography and Healthchecker.ie. © 2023 Healthcheck. All rights reserved</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+        <div class="panel">
+          <h1 class="text-center"> Calorie Calculator</h1>
+
+          <h2>Check Your Reccomended Daily Calorie Intake</h2>
+
+          <p id="introText" class="text-center"> Enter your weight and height below to check your BMI</p>
+
+          <form>
+            <div id="weightInput">
+              <p>Enter your weight here (KG)</p>
+              <input id="weight" type="number" min="1" name="a">
+            </div>
+            <div id="heightInput">
+              <p>Enter your height here (CM)</p>
+              <input id="height" type="number" min="1" name="b">
+            </div>
+            <button type="button" class="btn" onclick="calculateBMI()">Calculate BMI</button>
+            <div id="results" class="text-center">Your BMI results</div>
+          </form>
+        </div>   -->

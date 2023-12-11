@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Health, BMI, calculator">
+  <meta name="revised"  content="updated, 11/12/2023">
+  <meta name="author"   content="Luke Weldon">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Healthchecker.ie</h1>
+  </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="bmi.html">BMI</a></li>
+          <li><a href="calorie.html">Calorie</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+
+          <h2> What is BMI?</h2>
+
+          <p> Body mass index, or BMI, gives an indication of your body size.</p>
+          
+          <p>BMI is calculated using your weight and height (your weight divided by your height squared). 
+             Along with several other factors, like your blood pressure and cholesterol, 
+             BMI can help estimate your risk of a heart attack or stroke.</p>
+          
+          <p>It’s important to remember that BMI is not the most reliable measure of whether your weight 
+             is in a healthy range for your height. It’s not a good overall indicator of how healthy you are, 
+             and doesn’t take into account important factors like age, gender and body composition (fat, muscle and bone).</p>
+          
+          <p>For the following groups of people, BMI is not an accurate measure:</p>
+          
+          <p>Some ethnic groups including Aboriginal and/or Torres Strait Islander Peoples, and people of Asian/South Asian descent.<br>
+             Women who are pregnant.<br>
+             People 19 years of age or younger.<br>
+             Athletes or people who have a lot of muscle.<br>
+             People with a condition that affects the amount of fluid in their body (for example, heart failure).<br>
+             Waist measurement (waist circumference) is also important to consider alongside your BMI. 
+             Waist measurement can help to assess risk by measuring the amount of fat carried around your middle. 
+             It has some limitations though. For example, it is not accurate in women who are pregnant, children, 
+             and people with an enlarged tummy due to a medical condition.</p>
+          
+          <p>Following a heart-healthy eating pattern and being physically active can help you achieve and maintain a healthy weight.</p>
+          
+          <p>You might also like to speak to your GP, an Accredited Practising Dietitian or an Aboriginal and/or Torres Strait Islander Health Practitioner for individual advice.</p>
+
+
+          <h3>Check Your BMI</h3>
+          <p id="introText" class="text-center"> Enter your weight and height below to check your BMI</p>
+
+          <form>
+            <div id="weightInput">
+              <p>Enter your weight here (KG)</p>
+              <input id="weight" type="number" min="1" name="a">
+            </div>
+            <div id="heightInput">
+              <p>Enter your height here (CM)</p>
+              <input id="height" type="number" min="1" name="b">
+            </div>
+            <button type="button" class="btn" onclick="calculateBMI()">Calculate BMI</button>
+            <div id="results" class="text-center">Your BMI results</div>
+          </form>
+      </div>
+<footer class="footer">&copy;All images strictly copyright to UCDPA Photography and Healthchecker.ie. © 2023 Healthcheck. All rights reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>
